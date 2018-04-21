@@ -3,7 +3,7 @@ def valid_move?(board, index)
   valid = nil
   if taken == true || !index.between?(0 , 8)
     valid = false
-  elsif index.between?(0 , 8) && taken == false
+  elsif taken == false && index.between?(0 , 8)
     valid = true
   end
 end
